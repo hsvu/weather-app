@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { DataTable, Appbar } from 'react-native-paper';
+import { DataTable } from 'react-native-paper';
 import { weatherConditions } from '../utils/weatherConditions';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+// import { umbrellaSwitch, sunscreenSwitch } from './ToggleSwitch';
 import PropTypes from 'prop-types';
 
 const TextStyled = ({ style, info, weatherCondition }) => {
@@ -48,6 +49,8 @@ const WeatherPage = ({ temperature, temperatureFeelsLike, temperatureMax, temper
             color={weatherConditions[weatherCondition].textColor}
           />
         </View>
+        {/* <Text>{umbrellaSwitch}</Text>
+        <Text>{sunscreenSwitch}</Text> */}
         <TextStyled style={styles.location} info={location} weatherCondition={weatherCondition} />
         <DataTable>
           <DataTable.Row>
@@ -113,11 +116,5 @@ const styles = StyleSheet.create({
   },
 
 });
-
-WeatherPage.propTypes = {
-  style: PropTypes.string,
-  info: PropTypes.string.isRequired,
-  weatherCondition: PropTypes.string.isRequired,
-};
 
 export default WeatherPage;
