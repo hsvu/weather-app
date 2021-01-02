@@ -3,8 +3,8 @@ Simple weather app made using react native. It uses a weather API to fetch the c
 and will send you notifications if you need to bring an umbrella or put on sunscreen for the day.
 
 # Things to do before running the app
-This app uses Expo, so make sure that it's downloaded. You can download Expo (here)[https://expo.io/tools].
-You also need your own weather API key which you can get by creating a free account at (Open Weather)[https://openweathermap.org/api].
+This app uses Expo, so make sure that it's downloaded. You can download Expo [here](https://expo.io/tools).
+You also need your own weather API key which you can get by creating a free account at [Open Weather](https://openweathermap.org/api).
 
 # How to run
 1. Make sure you download the dependencies. You can do this by running 
